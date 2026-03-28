@@ -1,11 +1,11 @@
-# ⚡ Electric Load Forecasting using Machine Learning
+# Electric Load Forecasting using Machine Learning
 
-## 📌 Overview
+## Overview
 This project focuses on predicting electricity demand using historical consumption data and machine learning techniques. Accurate load forecasting is essential for efficient smart grid operation, enabling better demand-supply balance, reduced energy wastage, and improved grid stability.
 
 ---
 
-## 🎯 Objective
+## Objective
 - Predict future electricity load using past consumption data
 - Apply machine learning models to time-series forecasting
 - Analyze performance of different models
@@ -13,13 +13,13 @@ This project focuses on predicting electricity demand using historical consumpti
 
 ---
 
-## 📊 Dataset
+## Dataset
 - Source: UCI Electricity Load Dataset
 - Contains data from 370+ smart meters
 - Time resolution: 15-minute intervals
 - Each column represents an individual consumer’s electricity usage
 
-### 🔧 Data Processing
+### Data Processing
 - Converted timestamp to datetime format
 - Set timestamp as index
 - Handled missing values using forward fill
@@ -27,16 +27,16 @@ This project focuses on predicting electricity demand using historical consumpti
 
 ---
 
-## 🧠 Feature Engineering
+## Feature Engineering
 To capture temporal dependencies, the following features were created:
 
-### ⏱ Time-based Features
+### Time-based Features
 - Hour of the day
 - Day of the week
 - Month
 - Weekend indicator
 
-### 🔁 Lag Features
+### Lag Features
 - Previous time step load (lag-1)
 - Previous day load (lag-24)
 
@@ -44,7 +44,7 @@ To capture temporal dependencies, the following features were created:
 
 ---
 
-## ⚙️ Methodology
+## Methodology
 1. Data Preprocessing  
 2. Feature Engineering  
 3. Train-Test Split (70/30, time-based)  
@@ -53,61 +53,22 @@ To capture temporal dependencies, the following features were created:
 
 ---
 
-## 🤖 Models Used
+## Models Used
 - Linear Regression  
 - Random Forest Regressor  
 - Support Vector Regression (SVR)  
 
 ---
 
-## 📈 Evaluation Metrics
+## Evaluation Metrics
 - Mean Absolute Error (MAE)  
 - Root Mean Square Error (RMSE)  
 - Mean Absolute Percentage Error (MAPE)  
-- R² Score  
+- R² Score
 
 ---
 
-## 📊 Results
-- Linear Regression: ~0.04% MAPE  
-- Random Forest: ~0% MAPE  
-- SVR: ~0.05% MAPE  
-
-### 🔍 Key Observations
-- Very low prediction error due to strong temporal patterns
-- Lag features significantly improved model performance
-- Linear Regression performed well due to near-linear relationships in engineered features
-
----
-
-## 📉 Visualization
-- Load vs Time plots  
-- Actual vs Predicted comparison  
-- Model performance comparison  
-
----
-
-## 🧠 Key Insights
+## Key Insights
 - Electricity demand follows strong daily and weekly patterns  
 - Past consumption is the most important predictor  
 - Simple models can perform extremely well with proper feature engineering  
-
----
-
-## 🚀 Future Work
-- Integrate weather data (temperature, humidity)  
-- Use deep learning models (LSTM, RNN)  
-- Hyperparameter tuning for improved performance  
-- Real-time deployment for live forecasting  
-
----
-
-## 🛠 Tech Stack
-- Python  
-- Pandas, NumPy  
-- Matplotlib, Seaborn  
-- Scikit-learn  
-
----
-
-## 📁 Project Structure
