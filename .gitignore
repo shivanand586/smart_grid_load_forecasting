@@ -44,3 +44,8 @@ Thumbs.db
 # Environment variables
 .env
 .env.local
+
+# Large data files
+*.txt
+*.csv
+LD2011_2014.txt
